@@ -1,0 +1,110 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{textpos}
+% Set applicant's personal data for header
+\name{Ashish Tiwari}
+\address{80 Chapin Street, Apt 1 \linebreak Binghamton NY 13905 \linebreak (607) 374-0483}
+\contacts{atiwari3@binghamton.edu \linebreak www.github.com/atiwari3bu}
+
+\begin{document}
+	\makeheader
+	% Print the content
+	\vspace{-2mm}
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Binghamton, NY}{Binghamton University}{Fall 2017 -- May 2019 (Expected)}
+			\begin{itemize}
+				\item MS in Computer Science. GPA : 3.4
+				\item Coursework: Algorithms and Data Structures, Operating Systems and Programming System and Tools \\
+				(Math) : Statistics, Regression, Statistical Machine Learning and Modelling and Discrete Mathematics.
+			 \end{itemize}
+	    \end{cvsubsection}
+		\vspace{-3mm}
+		\begin{cvsubsection}{Mumbai, India}{Mumbai University}{August 2013 - August 2017}
+		    \begin{itemize}
+				\item B.E. in Electronics Engineering. Graduated with First class.
+				\item Coursework: Artificial Intelligence, Robotics, Computer Networks and Architecture and C Programming. 
+			\end{itemize}
+		\end{cvsubsection}
+		\vspace{-3mm}
+		\begin{cvsubsection}{Online Certifications}{}{}
+		    \begin{itemize}
+		        \item \textbf{Tensorflow :} Applied Machine Learning Models on Tensorflow with the help of Google Cloud. 
+		        \item \textbf{Data Science in Python :} Worked on real world data sets like Olympics using Pandas and Jupyter Notebook.
+		        \item \textbf{Machine Learning by Andrew Ng :}
+		        Synthesized Machine Learning Algorithms and terms like Neural Networks, Support Vector Machines and Principal Component Analysis.
+		    \end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	\vspace{-5mm}
+	\begin{cvsection}{Experience}
+		\begin{cvsubsection}{Teaching Assistant}{Object Oriented Programming}{January - Present}
+			\begin{itemize}
+				\item Developed an optimizer software that will automatically download all the assignments from the github profiles of students, compile and run them which increased the throughput time for grading all the assignments by \textbf{60\%}. 
+			\end{itemize}
+		\end{cvsubsection}
+		\vspace{-3mm}
+		\begin{cvsubsection}{Research Assistant}{Data Science Lab}{March 2018 - December 2018}	
+			\begin{itemize}
+				\item Developed software for professionals in Biotechnology field which detects Introns (Regions inside gene) in genomes and automated approaches which reduced the time consumption for the process by \textbf{20\%}.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	\vspace{-4mm}
+	
+	\begin{cvsection}{Projects}
+		\begin{cvsubsection}{}{}{}
+			\begin{itemize}
+				\item \textbf{Standard Library Map of C++}: Utilized the features of C++ like Template Programming, Operator Overloading and  Friend functions to design Map. Achieved the performance level by implementing the container using Skip Lists which provided the look up time as \textbf{O(lg(n))}, same as in actual std::map.
+				\vspace{1mm}
+				\item \textbf{Predicting App Installs on Google Play Store:} Preprocessed data set with the help of tests involving Variance Inflation Factor, Normality Assumption, Leverages, Outliers and Influential points. Prediction on the basis of Reviews, Ratings, Price, Category and Size produced coefficient for multiple regression (R-squared) as \textbf{0.82}.
+				\vspace{1mm}
+				\item \textbf{Email Classifier:} Classified emails into ham and spam using Algorithms like Logistic Regression, Naive Bayes and Decision Tree. Supervised training of Algorithms that used Probability Estimation, Bayes Rule and Tanh function  for learning produced an accuracy of \textbf{90\%} on test data set.
+				\vspace{1mm}
+				\item \textbf{Single Layer Neural Net for Binary Classification:} Implemented Perceptron with the help of sigmoid function and preprocssed data by removing all the false data lines and missing data by aggregation. The accuracy achieved with the help of feature selection was  \textbf{80\%} on test data set.
+				\vspace{1mm}
+				\item \textbf{Xv6 Kernel Hacking:} Implemented a Multi-level Feedback Queue (MLFQ) scheduler over default Round Robin Scheduling policy and designed a custom shell program to excute commands with the help of additional system calls. Designed a thread API that supported creation, joining and termination of threads.
+				\vspace{1mm}
+				\item \textbf{Standard Library Vector and Dequeue of C++:} Implemented the subset of Standard Library Containers in C using function pointers and made it generic with the help of structs so that it can be used for all data types. Designed the Dequeue in macros to avoid overheads and added extra feature which involved sorting.
+				\vspace{1mm}
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	\vspace{-4mm}
+	\newline
+	\begin{cvsection}{Skills}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Programming Languages : }C (Proficient), C++ (Proficient), Python (Intermediate), R (Basic), Matlab.
+				\item \textbf{Software Skills : } Algorithms, GNU-Makefile, Object Oriented Programming (OOP), Numpy, Pandas.
+				\item \textbf{Tools : } Unix, Vim, Latex, Git, Rstudio, Tensorflow, Scikit-Learn, GNU-Debugger, Valgrind.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	\vspace{-1mm}
+	
+\end{document}
